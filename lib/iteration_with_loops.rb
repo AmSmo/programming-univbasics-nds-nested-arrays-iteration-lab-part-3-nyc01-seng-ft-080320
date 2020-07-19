@@ -14,12 +14,12 @@ def join_nested_strings(src)
     while ele_index < row.length
       ele = row[ele_index]
       if ele.is_a? String
-        new_str+= ele
+        new_str+= ele + " "
       end
     ele_index+=1
     end
   
   row_index +=1
   end
-  new_str
+  new_str.strip
 end
